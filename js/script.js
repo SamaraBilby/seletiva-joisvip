@@ -1,3 +1,4 @@
+/* mostrar ou ocultar senha */
 let senha = document.getElementById('senha');
 
 document.getElementById('senha-ocultar').addEventListener('click', ()=> {
