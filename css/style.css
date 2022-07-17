@@ -12,7 +12,9 @@
     --ff-secundary: "Helvetica", Arial, sans serif;
 
     --clr-white:#FFFFFF;
+    --clr-purple:#524175;
     --clr-light-purple:#6c5393;
+    --clt-dark-purple: #34274d;
     --clr-grey:#333333;
     --clr-light-green: #61ff33;
     --clr-gold: #dcb647;
@@ -67,7 +69,7 @@ header h6{
     padding: 0.5rem;
 
     color: var(--clr-light-purple);
-    font-size: 1em;
+    font-size: 0.8em;
 
 }
 
@@ -88,14 +90,16 @@ header h6{
     transition: 0.3s ease-in;
 }
 
-.menu .m-busca button:hover{
-    background-color: var(--clr-gold);
+div.m-login, div.m-contato, div.m-carrinho {
+    cursor: pointer;
 }
-
 .nav-container{
     margin-top: 0.3rem;
     color: var(--clr-white);
     font-size: 0.8125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     background-color: var(--clr-light-purple);
 }
 .nav-container ul{
@@ -104,7 +108,30 @@ header h6{
 }
 
 .nav-container ul li{
-    padding: 1rem 5rem;
+    padding: 1rem 1.8rem;
+    cursor: pointer;
 }
+
+.nav-container ul li.nav-liquidacoes{
+    background-color: var(--clr-purple);
+}
+
+.nav-container ul li.nav-leilao{
+    background-color: var(--clt-dark-purple);
+    padding: 1rem 2.2rem;
+    letter-spacing: 5px;
+}
+
+
+/* hover */
+.menu .m-busca button:hover{
+    background-color: var(--clr-gold);
+}
+
+
+div.m-login:hover, div.m-contato:hover, div.m-carrinho:hover, .nav-container ul li:hover{
+    color: var(--clr-gold);
+}
+
 
 
