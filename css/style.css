@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
 
 * {
    padding: 0;
@@ -10,12 +12,13 @@
 
     --ff-primary: "Helvetica Neue", Arial, sans serif;
     --ff-secundary: "Helvetica", Arial, sans serif;
-
+    --ff-third:"Lato", sans serif;
     --clr-white:#FFFFFF;
     --clr-purple:#524175;
     --clr-light-purple:#6c5393;
     --clt-dark-purple: #34274d;
     --clr-grey:#333333;
+    --clr-light-gray:#c9c9c9;
     --clr-light-green: #61ff33;
     --clr-gold: #dcb647;
 }
@@ -93,6 +96,9 @@ header h6{
 div.m-login, div.m-contato, div.m-carrinho {
     cursor: pointer;
 }
+
+/*segundo menu*/
+
 .nav-container{
     margin-top: 0.3rem;
     color: var(--clr-white);
@@ -122,16 +128,99 @@ div.m-login, div.m-contato, div.m-carrinho {
     letter-spacing: 5px;
 }
 
+/*formulário de login*/
 
+.login-container {
+    width: 29.375rem;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+
+div.login-container h2{
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+
+    text-transform: uppercase;
+    font-family: var(--ff-third);
+    font-weight: 300;
+    font-size: 2.1em;
+    letter-spacing: 6px;
+
+    padding: 15px 0;
+    margin-bottom: 0;
+
+    border: 1px solid var(--clr-white);
+    border-radius: 12px 12px 0 0;
+}
+
+div.login-container form label{
+    display: block;
+    margin: 0.5rem 0.5rem 0.5rem 0.2rem;
+    padding: 0.3rem 0;
+    text-align: left;
+    color: var(--clr-grey);
+}
+
+div.login-container form input{
+    outline: 0;
+    width: 100%;
+    padding: 15px 5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--clr-light-gray);
+    border-radius: 5px;
+
+}
+div.login-container form input#senha{
+    margin-bottom: 0.5rem;
+}
+#senha-mostrar, #senha-ocultar{
+    position: absolute;
+    bottom: 138px;
+    right: 460px;
+
+    color: var(--clr-grey);
+}
+
+.user-login p small{
+    float: left;
+    margin-right: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.user-login p small span{
+    color: var(--clr-light-green);
+}
+
+.btn-login button{
+    width: 100%;
+    height: 6vh;
+
+    background-color: var(--clr-light-purple);
+    color: var(--clr-white);
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1rem;
+
+    border: 1px solid var(--clr-light-gray);
+    border-radius: 2px;
+
+    cursor: pointer;
+
+}
 /* hover */
 .menu .m-busca button:hover{
     background-color: var(--clr-gold);
 }
 
 
+
+
 div.m-login:hover, div.m-contato:hover, div.m-carrinho:hover, .nav-container ul li:hover{
     color: var(--clr-gold);
 }
+
 
 
 

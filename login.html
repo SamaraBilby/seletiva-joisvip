@@ -68,17 +68,45 @@
     <main>
 
         <div class="login-container">
-            <h2>identificação</h2>
-            <label for="email"><i class="fa-solid fa-envelope"></i> E-mail:</label>
-            <input type="email" name="email" id="email" placeholder="email@dominio.com.br">
-            <p>
-            <label for="senha"><i class="fa-solid fa-key"></i> Digite sua senha:</label>
-            <input type="password" name="senha" id= "senha" placeholder="Senha">
-            <i class="fa-solid fa-eye-slash" id="senha-ocultar"></i>
-            <i class="fa-solid fa-eye" id="senha-mostrar"></i>
-            </p>
+
+            <form action="" class="user-login">
+                <h2>identificação</h2>
+                <label for="email"><i class="fa-solid fa-envelope"></i> E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="email@dominio.com.br">
+                
+                    <p>
+                        <label for="senha"><i class="fa-solid fa-key"></i> Digite sua senha:</label>
+                        <input type="password" name="senha" id= "senha" placeholder="Senha">
+                            <i class="fa-solid fa-eye-slash" id="senha-ocultar"></i>
+                            <i class="fa-solid fa-eye" id="senha-mostrar"></i>
+                        <small>Esqueceu sua senha? <span>Clique aqui</span></small>
+                    </p>
+                
+                
+                <div class="btn-login">
+                    <button type="submit">enviar</button>
+                </div>
+            </form>
+
         </div>
 
+        <div class="novo-cadastro">
+            <h2 class="texto-cadastro">
+                primeira compra?
+            </h2>
+            <a href="#">Cadastre-se</a>
+        </div>
+
+        <div class="info-novo-cadastro">
+            <p>Precisa de ajuda para realizar o cadastro?</p>
+            <p><i class="fa-solid fa-phone"></i> 
+                Ligue 
+                <strong>41 3122 - 8500</strong>
+                ou
+                <i class="fa-brands fa-whatsapp"></i> Chame no Whatsapp <strong><a href="http://api.whatsapp.com/send?phone=5541995651657" target="_blank" title="whatsapp"> 41 99565-1657</a></strong> 
+            </p>
+        </div>
+       
     </main>
 
 <script src="./js/script.js"></script>
