@@ -1,5 +1,9 @@
-/* mostrar ou ocultar senha */
+
+let form = document.querySelector('form')
 let senha = document.getElementById('senha');
+let email = document.getElementById('email')
+
+/* mostrar ou ocultar senha */
 
 document.getElementById('senha-ocultar').addEventListener('click', ()=> {
     if(senha.type == "password") {
@@ -23,3 +27,8 @@ document.getElementById('senha-mostrar').addEventListener('click', ()=> {
     }
     
 });
+
+/* validação login */
+
+
+    

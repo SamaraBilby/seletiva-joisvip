@@ -31,15 +31,22 @@ body{
     font-family: var(--ff-primary);
 }
 /* Texto inicio*/
+header{
+    position: fixed;
+    z-index: 9999;
+
+    width: 100%;
+    height: 174px;
+    top:0;
+}
 header h6{
-    
+    background-color: var(--clr-white);
     color: var(--clr-light-purple);
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.14375rem;
-
     padding: 0.8333rem;
 
 }
@@ -54,7 +61,6 @@ header h6{
     background-color: var(--clr-light-purple);
     color: var(--clr-white);
     font-size: 1.2rem;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -102,17 +108,18 @@ div.m-login, div.m-contato, div.m-carrinho {
 /*segundo menu*/
 
 .nav-container{
-    margin-top: 0.3rem;
     color: var(--clr-white);
     font-size: 0.8125rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: var(--clr-light-purple);
+    border-top: 1px solid var(--clr-white);
 }
 .nav-container ul{
   display: flex;
-  justify-content: center
+  justify-content: center;
+  
 }
 
 .nav-container ul li{
@@ -134,7 +141,7 @@ div.m-login, div.m-contato, div.m-carrinho {
 
 .login-container {
     width: 29.375rem;
-    margin: 4rem auto;
+    margin: 15rem auto;
     text-align: center;
 }
 
@@ -176,12 +183,21 @@ div.login-container form input{
 div.login-container form input#senha{
     margin-bottom: 0.5rem;
 }
-#senha-mostrar, #senha-ocultar{
-    position: absolute;
-    bottom: 138px;
-    right: 460px;
+#senha-mostrar{
+    display: none;
+    position: relative;
+    top: -38px;
+    right: -95px;
+    width: 30px;
+    color: var(--clr-gray);
+}
+#senha-ocultar{
+    position: relative;
+    top: -38px;
+    right: -95px;
+    width: 30px;
 
-    color: var(--clr-grey);
+    color: var(--clr-gray);
 }
 
 .user-login p small{
@@ -198,7 +214,7 @@ div.login-container form input#senha{
 
 .btn-login button{
     width: 95%;
-    height: 6vh;
+    height: 45px;
     padding: 5px;
 
     background-color: var(--clr-light-purple);
@@ -241,7 +257,7 @@ section.cadastro .novo-cadastro{
 .novo-cadastro a{
     display: inline-block;
     width: 95%;
-    height: 6vh;
+    height: 45px;
 
     margin-top: 1rem;
     margin-bottom: 1.5rem;
