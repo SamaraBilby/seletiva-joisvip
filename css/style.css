@@ -15,6 +15,7 @@
     --clr-light-purple:#6c5393;
     --clr-grey:#333333;
     --clr-light-green: #61ff33;
+    --clr-gold: #dcb647;
 }
 
 body{
@@ -40,12 +41,70 @@ header h6{
 .menu {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
     background-color: var(--clr-light-purple);
     color: var(--clr-white);
     font-size: 1.2rem;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.menu
+.menu .m-logo img{
+    height: 6rem;
+}
+
+.menu .m-busca input{
+    border: 1px solid var(--clr-white);
+    border-radius: 0.3125rem 0 0 0.3125rem;
+    outline: 0;
+
+    width: 26.5625rem;
+    height: 2.5rem;
+    margin-right: 0rem;
+    padding: 0.5rem;
+
+    color: var(--clr-light-purple);
+    font-size: 1em;
+
+}
+
+.menu .m-busca button {
+    position: absolute;
+
+    background-color: var(--clr-light-purple);
+    border: 1px solid var(--clr-white);
+    border-radius: 0 0.3125rem 0.3125rem 0;
+    
+    margin-left: 0rem;
+    padding: 0.3rem;
+
+    color: var(--clr-white);
+    font-size: 1.5rem;
+
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.menu .m-busca button:hover{
+    background-color: var(--clr-gold);
+}
+
+.nav-container{
+    margin-top: 0.3rem;
+    color: var(--clr-white);
+    font-size: 0.8125rem;
+    background-color: var(--clr-light-purple);
+}
+.nav-container ul{
+  display: flex;
+  justify-content: center
+}
+
+.nav-container ul li{
+    padding: 1rem 5rem;
+}
+
+
