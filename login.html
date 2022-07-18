@@ -71,14 +71,17 @@
 
         <div class="login-container">
 
-            <form action="" class="user-login">
+            <form action="" id="user-login">
+                <div id="erro-login">
+                   <!-- Div mensagem de erro de login-->
+                </div>
                 <h2>identificação</h2>
                 <label for="email"><i class="fa-solid fa-envelope"></i> E-mail:</label>
                 <input type="email" name="email" id="email" placeholder="email@dominio.com.br">
                 
                     <p>
-                        <label for="senha"><i class="fa-solid fa-key"></i> Digite sua senha:</label>
-                        <input type="password" name="senha" id= "senha" placeholder="Senha">
+                        <label for="password"><i class="fa-solid fa-key"></i> Digite sua senha:</label>
+                        <input type="password" name="password" id= "senha" placeholder="Senha">
                           
                             <i class="fa-solid fa-eye-slash" id="senha-ocultar"></i>
                             <i class="fa-solid fa-eye" id="senha-mostrar"></i>
