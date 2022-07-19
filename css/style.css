@@ -15,8 +15,10 @@
     --ff-third:"Lato", sans serif;
     --clr-white:#FFFFFF;
     --clr-purple:#524175;
+    --clr-purple-2:#71718a;
     --clr-light-purple:#6c5393;
     --clt-dark-purple: #34274d;
+    --clt-dark-purple-2: #5b3077;
     --clr-gray:#333333;
     --clr-gray-2: #e8e8e8;
     --clr-light-gray:#c9c9c9;
@@ -322,7 +324,6 @@ section .info-novo-cadastro p a {
 div.m-login:hover, div.m-contato span:hover, div.m-carrinho i:hover, .nav-container ul li:hover{
     color: var(--clr-gold);
 }
-
 
 
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoiasVIP - Produtos</title>
+    
+    <link type="image/x-icon" rel="shortcut icon" href="/image/favicon2.ico">
+    <script src="https://kit.fontawesome.com/df04d68bf4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/produtos.css">
+
+</head>
+
+<body>
+    
+    <header>
+
+        <h6>10 x sem juros no cartão | Garantia ouro 18K | Entrega para todo o Brasil | Blog joias vip</h6>
+        
+        <div class="menu">
+            <div class="m-logo">
+                <a href="#">
+                    <img src="./image/logo-topo-branca.png" alt="Joias Vip">
+                </a>
+            </div>
+
+            <div class="m-busca">
+                <form action="" class="m-busca__pesquisa">
+                    <input type="text" name="pesquisa" class="pesquisaInput" placeholder="O que você procura?">
+                    <button type="submit" class="btn-busca" data-id="encontrar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="m-login">
+                <p><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</p>
+            </div>
+
+            <div class="m-contato">
+                <p><i class="fa-solid fa-phone"></i> Contato</p>
+            </div>
+
+            <div class="m-carrinho">
+                <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="itens-carrinho">0</span>
+            </div>
+        </div>
+         
+        <nav class="manu-nav">
+            <div class="nav-container">
+               
+                <ul>
+                   <li class="nav-categorias"><i class="fa-solid fa-bars"></i> Categorias</li>
+                   <li class="nav-joias"><i class="fa-solid fa-gem"></i> Joias</li>
+                   <li class="nav-acessorios"><i class="fa-solid fa-glasses"></i> Acessórios</li>
+                   <li class="nav-relogios"><i class="fa-solid fa-clock"></i> Relógios</li>
+                   <li class="nav-novidades"><i class="fa-solid fa-gift"></i> Novidades</li>
+                   <li class="nav-liquidacoes"><i class="fa-solid fa-hand-holding-dollar"></i> Liquidações</li>
+                   <li class="nav-leilao"><i class="fa-solid fa-gavel"></i> Leilão</li>
+                </ul>
+           
+            </div>        
+        </nav>
+
+    </header>
+  
+    <main>
+        <div class="quantidadesProdutos"></div>
+        <div id="produtosContainer">
+          <!-- Adiciona article com os produtos da loja--> 
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/produtos.js"></script>
+</body>
+</html>
